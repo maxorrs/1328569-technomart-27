@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Максим Строков](https://up.htmlacademy.ru/htmlcss/27/user/1328569).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
