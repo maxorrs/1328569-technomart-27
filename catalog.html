@@ -47,9 +47,7 @@
         <li><a href="#">Перфораторы</a></li>
       </ul>
       <h1>Перфораторы</h1>
-      <section>
-        <h3>Фильтр:</h3>
-      </section>
+
       <section>
         <h3>Сортировка:</h3>
         <ul>
@@ -63,26 +61,60 @@
         </ul>
       </section>
       <section>
-        <h2>Цена:</h2>
-        <!-- Слайдер -->
+        <h2>Фильтр:</h2>
       </section>
       <section>
-        <h2>Производители:</h2>
-        <ul>
-          <li>BOSCH</li>
-          <li>Интерскол</li>
-          <li>Makita</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Питание:</h2>
-        <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
-        </ul>
-        <button type="button">Показать</button>
+        <form method="get" action="https://echo.htmlacademy.ru" oninput="pricemax.value=pricerange.value">
+          <fieldset>
+            <legend><h3>Цена:</h3></legend>
+            <label class="visually-hidden" for="price-range">Выбор диапазона стоимости товара</label>
+            <input type="range" name="pricerange" min="0" max="3500" step="100" id="price-range" value="3000">
+            <div>
+              <output name="pricemin">0</output>
+              <span> — </span>
+              <output name="pricemax">3000</output>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><h3>Производители:</h3></legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interskol" id="filter-interskol">
+                <label for="filter-bosch">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-bosch">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend><h3>Питание:</h3></legend>
+            <ul>
+              <li>
+                <input type="radio" name="nutrition-group" value="rechargeable" id="rechargeable-label" checked>
+                <label for="rechargeable-label">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="nutrition-group" value="mains-supply" id="mains-supply-label">
+                <label for="mains-supply-label">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section>
         <h2>Список перфораторов</h2>
@@ -223,6 +255,14 @@
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
+      </section>
+      <section class="visually-hidden">
+        <button type="button">
+          <p class="visually-hidden">Закрыть окно</p>
+        </button>
+        <p>Товар добавлен в корзину!</p>
+        <button type="button">Оформить заказ</button>
+        <button type="button">Продолжить покупки</button>
       </section>
     </main>
     <footer>
