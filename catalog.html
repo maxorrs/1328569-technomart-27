@@ -69,19 +69,16 @@
       <section>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend><h3>Цена:</h3></legend>
-            <label class="visually-hidden" for="price-range">Выбор диапазона стоимости товара</label>
-            <input type="range" name="pricerange" min="0" max="3500" step="100" id="price-range" value="3000">
+            <legend>Цена:</legend>
+            <label class="visually-hidden" for="price">Выбор диапазона стоимости товара</label>
             <div>
-              <label for="min-price" class="visually-hidden">Выбор минимальной цены</label>
-              <input type="text" name="min-price" id="min-price" value="0">
+              <input type="text" name="min-price" id="price" value="0">
               <span> — </span>
-              <label for="max-price" class="visually-hidden">Выбор максимальной цены</label>
-              <input type="text" name="max-price" id="max-price" value="3000">
+              <input type="text" name="max-price" id="price" value="3000">
             </div>
           </fieldset>
           <fieldset>
-            <legend><h3>Производители:</h3></legend>
+            <legend>Производители:</legend>
             <ul>
               <li>
                 <input type="checkbox" name="bosch" id="filter-bosch" checked>
@@ -106,7 +103,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend><h3>Питание:</h3></legend>
+            <legend>Питание:</legend>
             <ul>
               <li>
                 <input type="radio" name="nutrition-group" value="rechargeable" id="rechargeable" checked>
