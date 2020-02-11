@@ -74,37 +74,44 @@
     </header>
     <main class="main">
       <section class="main-cards">
-        <article class="cards materials">
-          <p>Материалы</p>
-          <a href="#">На любой вкус</a>
-        </article>
-        <article class="cards tool">
-          <p>Инструмент</p>
-          <a href="#">На все случаи</a>
-        </article>
-        <article class="cards technic">
-          <p>Техника</p>
-          <a href="#">Для стройки</a>
-        </article>
-        <article class="slider">
-          <p class="slider-title">Дрели</p>
-          <p class="slider-text">Соседям на радость!</p>
-          <ul>
-            <li><img src="img/slider-1.jpg" width="620" height="266" alt="Фото рабочего на стройке сверлит кирпичную стену дрелью BOSCH "></li>
-            <li><img src="img/slider-2.jpg" width="620" height="266" alt="Фото рабочего на стройке штробит бетонную стену перфоратором BOSCH"></li>
-          </ul>
-          <button class="slider-left" type="button"></button>
-          <button class="slider-right" type="button"></button>
-          <a href="catalog.html">Открыть каталог</a>
-        </article>
-        <article class="cards discounts">
-          <p>Скидки 50%</p>
-          <a href="#">На 350 товаров</a>
-        </article>
-        <article class="cards delivery">
-          <p>Доставка</p>
-          <a href="#">Бесплатно</a>
-        </article>
+        <div class="container">
+          <div class="cards-left">
+            <article class="cards materials">
+              <p>Материалы</p>
+              <a href="#">На любой вкус</a>
+            </article>
+            <article class="cards tool">
+              <p>Инструмент</p>
+              <a href="#">На все случаи</a>
+            </article>
+            <!-- он меня пока бесит, отрублю его -->
+            <!-- <article class="slider">
+              <p class="slider-title">Дрели</p>
+              <p class="slider-text">Соседям на радость!</p>
+              <ul>
+                <li><img src="img/slider-1.jpg" width="620" height="266" alt="Фото рабочего на стройке сверлит кирпичную стену дрелью BOSCH "></li>
+                <li><img src="img/slider-2.jpg" width="620" height="266" alt="Фото рабочего на стройке штробит бетонную стену перфоратором BOSCH"></li>
+              </ul>
+              <button class="slider-left" type="button"></button>
+              <button class="slider-right" type="button"></button>
+              <a href="catalog.html">Открыть каталог</a>
+            </article> -->
+          </div>
+          <div class="cards-right">
+            <article class="cards technic">
+              <p>Техника</p>
+              <a href="#">Для стройки</a>
+            </article>
+            <article class="cards discounts">
+              <p>Скидки 50%</p>
+              <a href="#">На 350 товаров</a>
+            </article>
+            <article class="cards delivery">
+              <p>Доставка</p>
+              <a href="#">Бесплатно</a>
+            </article>
+          </div>
+        </div>
       </section>
       <section class="popular">
         <div class="container">
@@ -113,61 +120,74 @@
         </div>
       </section>
       <section class="product">
+        <!-- подскажи тут по размерам - высота карточки в макете 318, но чет тут не получается добиться такого размера -- нижний маргин от кнопки с ценой не влезает(( -->
         <div class="container">
           <article class="product-card">
             <div class="product-photo">
+            <!-- еще не могу сообразить почему фотка перекрывает бордер в карточке -- ее надо обрезать по бордеру? допустимо такое? -->
               <img src="img/photo-perforator-1.jpg" width="218" height="170" alt="BOSCH BFG 9000">
             </div>
-            <h3>
-              <a href="#">
-                <span>Перфоратор BOSCH BFG 9000</span>
-              </a>
-            </h3>
-            <p class="product-price">
-              <span>32500 Р.</span>
-              <a href="#">25500 Р.</a>
-            </p>
+            <div class="product-info">
+              <h3 class="product-title">
+                <a href="#">
+                <span>
+                  Перфоратор BOSCH BFG 9000
+                </span>
+                </a>
+              </h3>
+              <p class="product-price">
+                <span>32500 Р.</span>
+                <a href="#">25500 Р.</a>
+              </p>
+            </div>
           </article>
           <article class="product-card">
             <div class="product-photo">
               <img src="img/photo-perforator-2.jpg" width="218" height="170" alt="BOSCH BFG 3000">
             </div>
-            <h3>
-              <a href="#">
-                <span>Перфоратор BOSCH BFG 3000</span>
-              </a>
-            </h3>
-            <p class="product-price">
-              <span>22500 Р.</span>
-              <a href="#">15500 Р.</a>
-            </p>
+            <div class="product-info">
+              <h3 class="product-title">
+                <a href="#">
+                  <span>Перфоратор BOSCH BFG 3000</span>
+                </a>
+              </h3>
+              <p class="product-price">
+                <span>22500 Р.</span>
+                <a href="#">15500 Р.</a>
+              </p>
+            </div>
           </article>
           <article class="product-card">
             <div class="product-photo">
               <img src="img/photo-perforator-3.jpg" width="218" height="170" alt="BOSCH BFG 6000">
             </div>
-            <h3>
-              <a href="#">
-                <span>Перфоратор BOSCH BFG 6000</span>
-              </a>
-            </h3>
-            <p class="product-price">
-              <span>30500 Р.</span>
-              <a href="#">25500 Р.</a>
-            </p>
+            <div class="product-info">
+              <h3 class="product-title">
+                <a href="#">
+                  <span>Перфоратор BOSCH BFG 6000</span>
+                </a>
+              </h3>
+              <p class="product-price">
+                <span>30500 Р.</span>
+                <a href="#">25500 Р.</a>
+              </p>
+            </div>
           </article>
+          <!-- и как тут без цены правильно оформить -->
           <article class="product-card">
             <div class="product-photo">
               <img src="img/photo-perforator-4.jpg" width="218" height="170" alt="BOSCH BFG 2000">
             </div>
-            <h3>
-              <a href="#">
-                <span>Перфоратор BOSCH BFG 2000</span>
-              </a>
-            </h3>
-            <p class="product-price">
-              <a href="#">12500 Р.</a>
-            </p>
+            <div class="product-info">
+              <h3 class="product-title">
+                <a href="#">
+                  <span>Перфоратор BOSCH BFG 2000</span>
+                </a>
+              </h3>
+              <p class="product-price">
+                <a href="#">12500 Р.</a>
+              </p>
+            </div>
           </article>
         </div>
       </section>
