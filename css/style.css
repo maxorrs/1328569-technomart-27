@@ -372,7 +372,6 @@ img {
 .button-signup {
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 23px;
   color: #000;
   font-size: 21px;
   line-height: 21px;
@@ -1769,56 +1768,83 @@ padding-right: 10px;
 .popup-feedback {
   display: none;
 
-  width: 620px;
+  margin-right: auto;
+  margin-left: auto;
+
   position: absolute;
   left: 50%;
   margin-left: -310px;
   top: 127px;
+
+  width: 620px;
+  
   background-color: #fff;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, .5);
   border-top: 7px solid #ee3643;
 }
 
-.form-wrapper {
-  margin-top: 45px;
-  margin-left: 81px;
-  display: flex;
-  justify-content: center;
-  width: 460px;
-}
-
-.input-top {
-  display: flex;
-  justify-content: space-between;
-  width: 460px;
-}
-
-.input-top input {
-  width: 220px;
-}
-
 .popup-feedback label {
-  padding-bottom: 200px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
 }
 
-.popup-feedback input,
-.popup-feedback textarea {
+.form-wrapper {
+  margin-top: 44px;
+}
+
+.form-top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  width: 465px;
+  margin-bottom: 30px;
+
+}
+
+.name-input,
+.email-input {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.email-input {
+  margin-right: 0;
+}
+
+.name-input input,
+.email-input input {
+  width: 220px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 2px solid #d7dcde;
 }
 
-.input-top input {
-  width: 220px;
+.textarea-input textarea {
+  margin-top: 6px;
+  min-width: 460px;
+  max-width: 460px;
+  border: 2px solid #d7dcde;
+  padding-top: 6px;
+  padding-left: 8px;
+  padding-bottom: 80px;
 }
 
-
-.popup-feedback input::placeholder {
-  padding-left: 12px;
+.popup-feedback input::placeholder,
+.popup-feedback textarea::placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+.popup-feedback input:focus::placeholder {
+  color: transparent;
+}
+.textarea-input textarea:focus::placeholder {
+  color: transparent
 }
 
 .popup-feedback input:hover,
@@ -1834,12 +1860,28 @@ padding-right: 10px;
   border: 2px solid #ee3643;
 }
 
-.button-send {
+.popup-feedback .form-bottom {
   background-color: #f4f4f4;
+  padding-top: 34px;
+  padding-bottom: 38px;
+}
+
+.popup-feedback input[type="text"],
+.popup-feedback input[type="email"],
+.popup-feedback textarea {
+  padding-left: 18px;
+}
+
+.popup-feedback textarea {}
+
+.button-send {
+  text-align: center;
 }
 
 .button-send button {
   border: none;
+  padding: 10px 10px;
+  width: 460px;
   background-color: #ee3643;
   text-transform: uppercase;
   color: #fff;
