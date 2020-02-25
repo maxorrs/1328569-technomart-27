@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="main-bar">
+    <header class="header">
+      <section class="header-top">
         <div class="container">
-          <div class="main-bar-wrapper">
+          <div class="header-top-wrapper">
             <a class="main-logo" href="index.html">
               <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
             </a>
-            <form class="search-main-bar" method="get" action="https://echo.htmlacademy.ru">
+            <form class="search-header" method="get" action="https://echo.htmlacademy.ru">
               <label class="search">
                 <input class="search-form" type="search" placeholder="Поиск:">
                 <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -30,10 +30,10 @@
             </div>
           </div>
         </div>
-      </div>
-      <section class="header">
+      </section>
+      <section class="header-middle">
         <div class="container">
-          <div class="header-middle">
+          <div class="header-middle-wrapper">
             <h1 class="visually-hidden">Компания «Техномарт»</h1>
             <p class="header-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             <div class="tel-address-wrapper">
@@ -60,7 +60,7 @@
             </div>
           </div>
         </div>
-        <nav class="main-nav">
+        <nav class="header-nav">
           <div class="container">
             <div class="main-nav-wrapper">
               <ul>
@@ -88,42 +88,12 @@
         <div class="main-title">
           <h2>Перфораторы</h2>
         </div>
-        <div class="title-sort-wrapper">
-          <div class="filter-title">
-            <h3>Фильтр:</h3>
-          </div>
-          <section class="sort">
-            <div class="sort-title">
-              <h3>Сортировка:</h3>
-            </div>
-            <div class="sort-wrapper">
-              <ul class="sort-type type-first">
-                <li class="type-current"><a c href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По функционалу</a></li>
-              </ul>
-              <ul class="sort-type type-second">
-                <li class="type-current">
-                  <a href="#" aria-label="По возрастанию">
-                    <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                      <path d="M5.5 0L0 10h11z"/>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" aria-label="По убыванию">
-                    <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                      <path d="M5.5 10L0 0h11"/>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
         <div class="card-wrapper">
           <section class="filter-form">
-            <form method="get" action="https://echo.htmlacademy.ru">
+            <div class="filter-title">
+              <h3>Фильтр:</h3>
+            </div>
+            <form class="form-sort" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="form-price">
                 <legend>Цена:</legend>
                 <div class="range">
@@ -177,6 +147,34 @@
             </form>
           </section>
           <section class="list-punches">
+            <section class="sort">
+              <div class="sort-title">
+                <h3>Сортировка:</h3>
+              </div>
+              <div class="sort-wrapper">
+                <ul class="sort-type type-first">
+                  <li class="type-current"><a c href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По функционалу</a></li>
+                </ul>
+                <ul class="sort-type type-second">
+                  <li class="type-current">
+                    <a href="#" aria-label="По возрастанию">
+                      <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path d="M5.5 0L0 10h11z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="По убыванию">
+                      <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                        <path d="M5.5 10L0 0h11"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
             <h2 class="visually-hidden">Список перфораторов</h2>
             <div class="list-punches-wrapper">
               <article class="product-card">
@@ -376,14 +374,6 @@
         </p>
       </div>
     </section>
-      <section class="popup-basket">
-        <button type="button">
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
-        <p>Товар добавлен в корзину!</p>
-        <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
-      </section>
     </main>
     <footer class="footer">
       <div class="footer-top">
