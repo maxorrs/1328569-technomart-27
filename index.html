@@ -82,19 +82,19 @@
               <a href="#">На все случаи</a>
             </article>
             <div class="slider-list">
-              <article class="slider slider-first">
+              <button class="slider-left" type="button"></button>
+              <button class="slider-right" type="button"></button>
+              <ul class="slider-dots">
+                <li class="dots dots-first dots-current"><a href="#"></a></li>
+                <li class="dots dots-second"><a href="#"></a></li>
+              </ul>
+              <a class="button button-slider" href="catalog.html">Открыть каталог</a>
+              <article class="slider slider-first slider-show">
                 <p class="slider-title">Дрели</p>
                 <p class="slider-text">Соседям на радость!</p>
                 <div class="slider-photo">
                   <img src="img/slider-1.jpg" width="620" height="266" alt="Фото рабочего на стройке сверлит кирпичную стену дрелью BOSCH ">
                 </div>
-                <button class="slider-left" type="button"></button>
-                <button class="slider-right" type="button"></button>
-                <a class="button button-slider" href="catalog.html">Открыть каталог</a>
-                <ul class="slider-dots">
-                  <li class="dots current"><a href="#"></a></li>
-                  <li class="dots"><a href="#"></a></li>
-                </ul>
               </article>
               <article class="slider slider-second">
                 <p class="slider-title">Перфораторы</p>
@@ -102,13 +102,6 @@
                 <div class="slider-photo">
                   <img src="img/slider-2.jpg" width="620" height="266" alt="Фото рабочего на стройке штробит бетонную стену перфоратором BOSCH">
                 </div>
-                <button class="slider-left" type="button"></button>
-                <button class="slider-right" type="button"></button>
-                <a class="button button-slider" href="catalog.html">Открыть каталог</a>
-                <ul class="slider-dots">
-                  <li class="dots"><a href="#"></a></li>
-                  <li class="dots current"><a href="#"></a></li>
-                </ul>
               </article>
             </div>
           </div>
@@ -271,32 +264,44 @@
       </section>
       <section class="services">
         <div class="container">
-          <div class="services-delivery">
-            <h2>Сервисы</h2>
-            <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <div class="services-wrapper">
-              <div class="services-list">
-                <ul class="services-item">
-                  <li><a class="current" href="#">Доставка</a></li>
-                  <li><a href="#">Гарантия</a></li>
-                  <li><a href="#">Кредит</a></li>
-                </ul>
-              </div>
-              <div class="services-info">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="services-wrapper">
+            <div class="services-list">
+              <ul class="services-item">
+                <li><a class="item-delivery current" href="#">Доставка</a></li>
+                <li><a class="item-gurantee" href="#">Гарантия</a></li>
+                <li><a class="item-credit" href="#">Кредит</a></li>
+              </ul>
+            </div>
+            <div class="services-info">
+              <div class="services-delivery services-show">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо <br>
                   к вашему подъезду совершенно бесплатно! 
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!</p>
               </div>
+              <div class="services-gurantee">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,<br> 
+                  а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
+                  Дом уж восстановите как-нибудь сами.</p>
+              </div>
+              <div class="services-credit">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.</p>
+                <a class="button" href="#">Отправить заявку</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <div class="info container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
         <section class="popup-feedback">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <button class="close-form" type="button" aria-label="Закрыть форму"></button>
+          <button class="close-popup" type="button" aria-label="Закрыть форму"></button>
           <div class="form-wrapper">
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="form-top">
@@ -327,7 +332,7 @@
           <div class="container">
             <h2 class="visually-hidden">Карта расположения офиса</h2>
             <div class="img-map">
-              <button class="close-form" type="button" aria-label="Закрыть карту"></button>
+              <button class="close-popup" type="button" aria-label="Закрыть карту"></button>
               <img src="img/map.jpg" width="940" height="446" alt="Расположение офиса на карте по ул. Большая Конюшенная, 19, Санкт-Петербург">
             </div>
           </div>
@@ -412,5 +417,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
