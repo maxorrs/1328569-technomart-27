@@ -110,14 +110,18 @@
             <form class="form-sort" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="form-price">
                 <legend>Цена:</legend>
-                <div class="range">
-                  <span>Ползунок непонятный</span>
-                </div>
-                <div class="range-price">
-                  <input type="text" name="min-price" value="0">
-                  <span>—</span>
-                  <input type="text" name="max-price" value="30000">
-                </div>
+                  <div class="range">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                  <div class="range-price">
+                    <input type="text" name="min-price" value="0">
+                    <span>—</span>
+                    <input type="text" name="max-price" value="30000">
+                  </div>
               </fieldset>
               <fieldset class="form-manufacturer">
                 <legend>Производители:</legend>
