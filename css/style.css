@@ -410,14 +410,16 @@ img {
 }
 
 .account-name {
+  padding: 2px 59px 1px 33px;
+
   margin-bottom: 8px;
   position: relative;
   background-color: #fff;
 }
 
 .account-name a {
+  padding: 10px;
   display: block;
-  padding: 12px 69px 11px 43px;
   font-size: 21px;
   line-height: 21px;
   color: #000;
@@ -718,9 +720,26 @@ padding-right: 10px;
 }
 
 .form-manufacturer {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  position: relative;
 }
+
+.form-manufacturer::before,
+.form-manufacturer::after {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.form-manufacturer::before {
+  top: 24px;
+}
+
+.form-manufacturer::after {
+  bottom: -23px;
+}
+
 
 .form-manufacturer legend {
   padding-top: 47px;
@@ -1483,7 +1502,6 @@ padding-right: 10px;
   justify-content: center;
   background-image: url("../img/item-button.svg");
   background-repeat: no-repeat;
-  background-position: 3px 1px;
   color: #fff;
   font-size: 17px;
   line-height: 18px;
@@ -1575,7 +1593,7 @@ padding-right: 10px;
 
 .services {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 34px;
 }
 
 .services-wrapper {
@@ -1718,6 +1736,7 @@ padding-right: 10px;
 .services-delivery {
   display: none;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .services-delivery::after {
@@ -1730,6 +1749,7 @@ padding-right: 10px;
 .services-gurantee {
   display: none;
   position: relative;
+  padding-bottom: 6px;
 }
 
 .services-gurantee p {
@@ -1746,6 +1766,7 @@ padding-right: 10px;
 .services-credit {
   display: none;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .services-credit p {
