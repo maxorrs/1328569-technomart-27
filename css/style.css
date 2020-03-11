@@ -40,6 +40,7 @@
 
 
 *, *::after, *::before {
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -251,8 +252,6 @@ img {
   background-color: #ee3643;
 }
 
-
-
 .arrange:hover,
 .arrange:focus {
   background-color: #5fbb2d;
@@ -273,13 +272,13 @@ img {
   position: relative;
   margin-bottom: 40px;
   display: flex;
-  justify-content: space-between;
 }
 
 .header-title {
   display: block;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-right: 70px;
   padding-left: 52px;
   padding-top: 3px;
   width: 250px;
@@ -289,10 +288,9 @@ img {
   color: #ee3643;
 }
 
-
 .tel-address-wrapper {
-  position: absolute;
-  left: 320px;
+  margin-right: auto;
+  position: relative;
 }
 
 .header-tel {
@@ -311,6 +309,7 @@ img {
 .header-tel::before {
   position: absolute;
   left: 0;
+  top: 13px;
   content: url('../img/icon-phone.svg');
   padding-left: 15px;
 }
@@ -713,6 +712,7 @@ padding-right: 10px;
 }
 
 .filter-form ul {
+  padding-left: 0;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
@@ -1285,6 +1285,7 @@ padding-right: 10px;
   margin-top: 20px;
   margin-bottom: 17px;
   padding-inline-start: 0;
+  padding-left: 0;
   display: flex;
   list-style: none;
 }
@@ -1684,6 +1685,7 @@ padding-right: 10px;
 
 .services-item {
   padding-top: 3px;
+  padding-left: 0;
   position: relative;
   padding-inline-start: 0;
   margin-block-start: 0;
@@ -1751,17 +1753,14 @@ padding-right: 10px;
   color: #32425c;
 }
 
-.services-info p {
-  width: 249px;
-  font-size: 13px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
-
 .services-delivery {
   display: none;
   position: relative;
   padding-bottom: 30px;
+}
+
+.services-delivery p {
+  width: 249px;
 }
 
 .services-delivery::after {
@@ -1815,6 +1814,7 @@ padding-right: 10px;
 }
 
 .pagination {
+  padding-left: 40px;
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -1882,6 +1882,7 @@ padding-right: 10px;
 }
 
 .company-wrapper p {
+  max-width: 100%;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -1900,6 +1901,7 @@ padding-right: 10px;
 }
 
 .company-wrapper ul {
+  padding-left: 0;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
@@ -2050,7 +2052,6 @@ padding-right: 10px;
 .footer-bottom {
   padding-top: 34px;
   padding-bottom: 35px;
-
   background-color: #293449;
   display: flex;
   justify-content: center;
@@ -2438,8 +2439,6 @@ padding-right: 10px;
 .popup-buttons li:nth-child(2n) {
   margin-right: 0;
 }
-
-
 
 .popup-show {
   display: block;
