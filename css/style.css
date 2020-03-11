@@ -61,7 +61,6 @@ a {
 }
 
 img {
-  height: auto;
   max-width: 100%;
 }
 
@@ -648,11 +647,13 @@ padding-right: 10px;
 .sort-type.type-first {
   justify-content: space-between;
   width: 355px;
+  padding-left: 0;
 }
 
 .sort-type.type-second {
   width: 60px;
   justify-content: space-around;
+  padding-left: 0;
 }
 
 .sort-type a {
@@ -755,15 +756,6 @@ padding-right: 10px;
 .form-price::after {
   bottom: -25px;
 }
-
-/* .form-manufacturer::before {
-  top: 24px;
-} */
-
-.form-manufacturer::after {
- 
-}
-
 
 .form-manufacturer legend {
   padding-top: 47px;
@@ -1093,7 +1085,7 @@ padding-right: 10px;
   background-color: #ff5357;
   width: 100px;
   transform: rotate(45deg);
-  z-index: 1;
+  z-index: 15;
 }
 
 .materials {
@@ -1387,7 +1379,7 @@ padding-right: 10px;
   padding: 44px 0;
   
   background-color: rgba(255,255,255,0.9);
-  z-index: 10;
+  z-index: 3;
 }
 
 .actions-card .buy,
@@ -1539,6 +1531,7 @@ padding-right: 10px;
 }
 
 .manufacturer ul {
+  padding-left: 0;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
@@ -1590,6 +1583,10 @@ padding-right: 10px;
   display: flex;
   
   justify-content: space-between;
+}
+
+.company {
+  margin-right: auto;
 }
 
 .info h2 {
@@ -1874,10 +1871,9 @@ padding-right: 10px;
   margin-block-end: 0;
 }
 
+
+
 .company-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 519px;
 }
 
@@ -1928,17 +1924,17 @@ padding-right: 10px;
   background-color: #ee3643;
 }
 
-.company-wrapper .button.button-company {
+.button-company {
   padding-top: 11px;
   padding-bottom: 9px;
   width: 220px;
 }
 
-.contact-wrapper .button.button-map {
+.button-map {
   padding-top: 11px;
   padding-bottom: 9px;
   padding-left: 14px;
-  width: 100%;
+  margin-top: auto;
 }
 
 .contact-map {
@@ -2053,8 +2049,7 @@ padding-right: 10px;
   padding-top: 34px;
   padding-bottom: 35px;
   background-color: #293449;
-  display: flex;
-  justify-content: center;
+
 }
 
 .footer-nav-bottom a {
@@ -2063,6 +2058,7 @@ padding-right: 10px;
 
 .footer-bottom-wrapper {
   width: 925px;
+
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -2211,7 +2207,7 @@ padding-right: 10px;
   position: fixed;
   left: 50%;
   top: 50%;
-  z-index: 1;
+  z-index: 5;
 }
 
 .img-map {
@@ -2225,7 +2221,7 @@ padding-right: 10px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 2;
+  z-index: 6;
 }
 
 .close-popup::before {
@@ -2238,7 +2234,7 @@ padding-right: 10px;
 
 .popup-map iframe {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   border: none;
 }
 
@@ -2256,7 +2252,7 @@ padding-right: 10px;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, .5);
   border-top: 7px solid #ee3643;
 
-  z-index: 1;
+  z-index: 5;
 }
 
 .popup-feedback label {
