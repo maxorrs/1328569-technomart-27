@@ -149,6 +149,19 @@ img {
   color: #fff;
 }
 
+.search-form:-ms-input-placeholder {
+  color: #fff;
+}
+
+.search-form::-ms-input-placeholder {
+  color: #fff;
+}
+
+.search-form::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
 .search-icon {
   position: absolute;
   left: 18px;
@@ -163,8 +176,7 @@ img {
   opacity: 1;
 }
 
-.search-form:hover,
-.search:focus {
+.search-form:hover {
   background-color: #212a3a;
 }
 
@@ -174,6 +186,7 @@ img {
 }
 
 .search-form:focus {
+  height: 100%;
   background-color: #fff;
   font-size: 17px;
   line-height: 18px;
@@ -1757,7 +1770,7 @@ padding-right: 10px;
 }
 
 .services-delivery p {
-  width: 249px;
+  width: 250px;
 }
 
 .services-delivery::after {
@@ -2075,6 +2088,7 @@ padding-right: 10px;
 }
 
 .social {
+  position: relative;
   padding-left: 25px;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -2096,28 +2110,55 @@ padding-right: 10px;
 
 .social a {
   display: block;
+  position: relative;
   width: 42px;
   height: 42px;
-  display: block;
-  text-align: center;
-  padding: 11px;
+  /* text-align: center; */
+  /* padding: 11px; */
 }
 
 .social .vk {
-  padding-left: 8px;
-  padding-top: 14px;
+  /* padding-left: 8px;
+  padding-top: 14px; */
 }
 
 .vk::before {
-  content: url("../img/icon-vk.svg")
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  top: 15px;
+  left: 7px;
+  position: absolute;
+  background-image: url("../img/icon-vk.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .fb::before {
-  content: url("../img/icon-fb.svg")
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  top: 10px;
+  left: 14px;
+  position: absolute;
+  background-image: url("../img/icon-fb.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .inst::before {
-  content: url("../img/icon-insta.svg")
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  top: 11px;
+  left: 11px;
+  position: absolute;
+  background-image: url("../img/icon-insta.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .social li:hover,
