@@ -95,7 +95,7 @@ img {
 }
 
 .header ul {
-  padding-inline-start: 0;
+  padding: 0;
 }
 
 .header-top {
@@ -627,12 +627,11 @@ img {
 }
 
 .sort-type {
+  margin: 0;
+  padding: 0;
   padding-top: 8px;
   display: flex;
   flex-wrap: wrap;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
   list-style: none;
 }
 
@@ -1081,8 +1080,9 @@ img {
 
 .new-product::after {
   font-size: 14px;
+  height: 28px;
   line-height: 28px;
-  top: 4px;
+  top: 5px;
   right: -32px;
 }
 
@@ -1141,7 +1141,7 @@ img {
 .slider {
   padding-left: 24px;
   position: absolute;
-  top: -22px;
+  top: -121px;
   width: 620px;
   min-height: 266px;
   background-color: #66473F;
@@ -1182,7 +1182,10 @@ img {
 }
 
 .button-slider {
+  position: relative;
   display: block;
+  top: 206px;
+  left: 1px;
   padding-left: 12px;
   width: 195px;
   z-index: 2;
@@ -1199,13 +1202,13 @@ img {
 }
 
 .slider-left {
-  top: 92px;
+  top: -7px;
   left: 25px;
 }
 
 .slider-right {
-  right: -275px;
-  top: 92px;
+  left: 578px;
+  top: -7px;
 }
 
 .slider-left::before {
@@ -1231,6 +1234,9 @@ img {
   margin: 0;
   padding: 0;
   padding-top: 14px;
+  position: relative;
+  top: 85px;
+  left: 295px;
   display: flex;
   list-style: none;
   z-index: 1;
@@ -1257,14 +1263,6 @@ img {
 
 .slider-show {
   display: block;
-}
-
-.slider-control {
-  padding-left: 25px;
-  padding-top: 184px;
-  display: flex;
-  width: 325px;
-  justify-content: space-between;
 }
 
 .breadcrumbs {
@@ -1382,10 +1380,12 @@ img {
 .actions-card .bookmark {
   position: relative;
   display: block;
-  width: 132px;
+  width: 133px;
   margin: 0 auto;
   margin-bottom: 7px;
-  padding: 7px 0;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 45px;
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
@@ -1395,18 +1395,19 @@ img {
   line-height: 18px;
   font-weight: normal;
   font-family: "Cuprum", sans-serif;
-  text-decoration: none;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .actions-card .buy::before {
   position: absolute;
   opacity: .3;
   content: url("../img/icon-cart.svg");
-  left: 6px;
+  left: 10px;
 }
 
 .actions-card .bookmark {
+  padding-left: 32px;
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
