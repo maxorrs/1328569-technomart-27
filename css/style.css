@@ -1650,8 +1650,8 @@ img {
 .services p {
   position: relative;
   margin: 0;
-  width: 440px;
-  font-family: "PTSans", "Arial", sans-serif;
+  width: 415px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-bottom: 35px;
@@ -1763,7 +1763,7 @@ img {
 }
 
 .services-delivery p {
-  width: 300px;
+  width: 295px;
 }
 
 .services-delivery::after {
@@ -1780,7 +1780,7 @@ img {
 }
 
 .services-gurantee p {
-  width: 400px;
+  width: 375px;
 }
 
 .services-gurantee::after {
